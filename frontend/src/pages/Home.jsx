@@ -16,7 +16,7 @@ function Home() {
         <div className="max-w-4xl space-y-8 z-10">
           <h1 className="text-6xl md:text-8xl font-extrabold text-slate-900 tracking-tight drop-shadow-sm">
             Welcome to <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600">
+            <span className="text-transparent bg-clip-text bg-red-500 font-extrabold">
               TuneTalent
             </span>
           </h1>
