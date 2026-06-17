@@ -1,0 +1,39 @@
+form {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2023ea;
+    color: white;
+    border: none;
+    border-radius: 20px;
+   cursor:pointer
+}
+
+div {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f4f6;
+}
