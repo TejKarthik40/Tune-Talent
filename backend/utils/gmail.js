@@ -1,9 +1,5 @@
 const nodemailer = require('nodemailer');
 const path = require('path');
-const dns = require('dns');
-
-// Force Node to use IPv4 instead of IPv6 to prevent ENETUNREACH errors on certain networks
-dns.setDefaultResultOrder('ipv4first');
 
 require('dotenv').config({
   path: path.resolve(__dirname, '../.env')
@@ -24,10 +20,6 @@ const mail = async (email, username) => {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
-    name: 'localhost',
-    lookup(hostname, options, callback) {
-      dns.lookup(hostname, { family: 4 }, callback);
-    }
   });
 
   const msg = {
